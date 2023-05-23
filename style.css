@@ -1,0 +1,28 @@
+body {
+    margin: 40px auto;
+    max-width: 500px;
+}
+
+fieldset {
+    background-color: rgb(180, 212, 207);
+    padding: 10px 30px 0;
+}
+
+fieldset > div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow:column;
+}
+
+input {
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+  }
+
+input:hover, input:focus, input:focus-visible {
+    background-color: #eee;
+}
+
+input:focus-visible {
+    background-color: orangered;
+}
