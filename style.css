@@ -1,6 +1,55 @@
+:root {
+    --upfront: 30%;
+    --central-part-form: 40%;
+    --last-section:30%;
+    --gray-fox: rgb(100, 100, 100);
+
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
 body {
-    margin: 40px auto;
+    width: 100vw;
+    height: 100%;    
+    background-color: var(--gray-fox);
+    
+}
+
+/* .big-container {
+    display: flex;
+    flex-wrap: nowrap;
+} */
+
+#big-container {
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+body > div {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2vh;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 99vh;
+}
+
+form {
     max-width: 500px;
+
 }
 
 fieldset {
@@ -25,4 +74,17 @@ input:hover, input:focus, input:focus-visible {
 
 input:focus-visible {
     background-color: orangered;
+}
+
+.description-part {
+    background-color: white;
+    height: 30vh;
+    width: 100%;
+}
+
+#the-footer-section {
+    background-color: pink;
+    height: calc();
+
+
 }
