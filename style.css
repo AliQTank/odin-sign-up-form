@@ -2,7 +2,7 @@
     --upfront: 30%;
     --central-part-form: 40%;
     --last-section:30%;
-    --gray-fox: rgb(8, 109, 163);
+    --gray-fox: rgb(114, 188, 228);
 
 
 }
@@ -85,15 +85,18 @@ input:focus-visible {
 .description-part {
     height: 30vh;
     width: 100%;
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-left: 30px;
 }
 
 .description-part p {
-    padding: 1.5rem; 
+    margin-bottom: 2rem; 
 }
 
 #the-footer-section {
     height: 100%;
-    padding: 30px;
+    padding: 50px;
 
 }
 

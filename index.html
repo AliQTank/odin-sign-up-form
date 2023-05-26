@@ -20,22 +20,22 @@
                 <p>  You know you want to</p>            
             </div>
             <div>
-                <form>
+                <form action="#">
                     <fieldset>
                         <h2>Let's do this!</h2>
-                        <div><label for="name">Name</label><input type="text" id="name" name="name"></div>
-                        <div><label for="email">E mail</label><input type="email" name="email"></div>
+                        <div><label for="name">Name</label><input type="text" id="name" name="name" required></div>
+                        <div><label for="email">E mail</label><input type="email" name="email" required></div>
                         <div><label for="phone">Telephone</label><input type="tel" id="phone"></div>
                     </fieldset>
                     <fieldset>
-                        <div><label for="pass">Password</label><input type="password" id="pass" autocomplete="new-password"></div>
-                        <div><label for="confirm">confirm password</label><input type="password" id="confirm" autocomplete="new-password"></div>
+                        <div><label for="pass">Password</label><input type="password" id="pass" autocomplete="new-password" required></div>
+                        <div><label for="confirm">confirm password</label><input type="password" id="confirm" autocomplete="new-password" required></div>
                         
                     </fieldset>       
                 </form>
             </div>
             <div id="the-footer-section">
-                <div><button type="submit">Create Account</button></div>
+                <div><button type="submit" >Create Account</button></div>
                 <p>Already have an account? <a href="">Log in</a></p>
 
 
