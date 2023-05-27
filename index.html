@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Raleway:wght@300;500&family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="big-container">
-        <div><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblog.deervalley.com%2Fwp-content%2Fuploads%2F2010%2F01%2Fcrab.jpg&f=1&nofb=1&ipt=66d434122e1b188d2fbd9c0e3cfa36a2e69dc0a12b3260b2725e08631b6bb03a&ipo=images" alt=""></div>
+        <div id="first-half">
+            <div>
+                <!-- <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="logo-odin"> -->
+
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblog.deervalley.com%2Fwp-content%2Fuploads%2F2010%2F01%2Fcrab.jpg&f=1&nofb=1&ipt=66d434122e1b188d2fbd9c0e3cfa36a2e69dc0a12b3260b2725e08631b6bb03a&ipo=images" alt=""></div>
+            </div>
         <div id="mother-half" class="the-other-half">
             <div class="description-part">
-                <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur,
-                     adipisicing elit. Necessitatibus, commodi!
-                     Sign up now to get started.
-                   
+                <p>If you want to get news, about activities and promotions,
+                    Sign up now to get started, \n become part of this very ambitious dream of saving the world
                 </p>
                 <p>  You know you want to</p>            
             </div>
             <div>
-                <form action="#">
+                <form action="#" method="get">
                     <fieldset>
                         <h2>Let's do this!</h2>
-                        <div><label for="name">Name</label><input type="text" id="name" name="name" required></div>
+                        <div><label for="name">Name</label><input type="text" id="name" name="name" pattern="\w{5,20}" required></div>
                         <div><label for="email">E mail</label><input type="email" name="email" required></div>
-                        <div><label for="phone">Telephone</label><input type="tel" id="phone"></div>
+                        <div><label for="phone">Telephone</label><input type="tel" id="phone" required pattern="\d{8,16}"></div>
                     </fieldset>
                     <fieldset>
                         <div><label for="pass">Password</label><input type="password" id="pass" autocomplete="new-password" required></div>
@@ -33,20 +40,17 @@
                         
                     </fieldset>       
                 </form>
+                
             </div>
             <div id="the-footer-section">
-                <div><button type="submit" >Create Account</button></div>
+                <div><button type="button" id="the-only-button">Create Account</button></div>
                 <p>Already have an account? <a href="">Log in</a></p>
 
 
 
             </div>
         </div>
-        
-
     </div>
-    
-    
-        
+    <script src="app.js"></script>        
 </body>
 </html>

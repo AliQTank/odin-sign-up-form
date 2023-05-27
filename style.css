@@ -2,7 +2,7 @@
     --upfront: 30%;
     --central-part-form: 40%;
     --last-section:30%;
-    --gray-fox: rgb(114, 188, 228);
+    --gray-fox: rgb(56, 84, 99);
 
 
 }
@@ -12,7 +12,9 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
@@ -37,7 +39,6 @@ body {
 }
 
 body > div {
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 2vh;
     margin: 0;
     padding: 0;
@@ -55,13 +56,15 @@ form {
 }
 
 form:hover {
-    border: 2px solid blueviolet;
+    border: 2px solid rgb(29, 58, 112);
+    background-color: rgba(21, 21, 21, 0.7);  
+    color: #eee;  
 }
 
 fieldset {
-    background-color: rgba(255, 255, 255, 0.4);
     padding: 10px 30px 0;
 }
+
 
 fieldset > div {
     margin-bottom: 20px;
@@ -69,9 +72,14 @@ fieldset > div {
     flex-flow:column;
 }
 
+div fieldset h2 {
+    margin-bottom: 50px;
+}
+
 input {
     box-shadow: inset 1px 1px 3px #ccc;
     border-radius: 5px;
+    max-width: 400px;
   }
 
 input:hover, input:focus, input:focus-visible {
@@ -80,6 +88,15 @@ input:hover, input:focus, input:focus-visible {
 
 input:focus-visible {
     background-color: orangered;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    color: green;
+    background-color: black;
 }
 
 .description-part {
@@ -91,8 +108,11 @@ input:focus-visible {
 }
 
 .description-part p {
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
+    max-width: 600px;
+     
 }
+
 
 #the-footer-section {
     height: 100%;
