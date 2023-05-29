@@ -3,6 +3,7 @@
     --central-part-form: 40%;
     --last-section:30%;
     --gray-fox: rgb(56, 84, 99);
+    --psichogreen: chartreuse;
 
 
 }
@@ -36,12 +37,6 @@ body {
     display: flex;
     flex-wrap: nowrap;
     
-}
-
-body > div {
-    font-size: 2vh;
-    margin: 0;
-    padding: 0;
 }
 
 img {
@@ -91,12 +86,13 @@ input:focus-visible {
 }
 
 input:invalid {
-    border: 2px solid red;
+    border: 4px solid red;
 }
 
 input:valid {
     color: green;
     background-color: black;
+    border: 4px solid white;
 }
 
 .description-part {
