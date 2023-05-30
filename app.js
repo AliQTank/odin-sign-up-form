@@ -6,7 +6,9 @@ const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
 const telInput = document.querySelector("#phone");
 
-onlyButton2.addEventListener("click", consolation());
+onlyButton2.addEventListener("click", () => {
+    consolation();
+});
 
 
 
