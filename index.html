@@ -17,7 +17,7 @@
             <div>
                 <!-- <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="logo-odin"> -->
 
-                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblog.deervalley.com%2Fwp-content%2Fuploads%2F2010%2F01%2Fcrab.jpg&f=1&nofb=1&ipt=66d434122e1b188d2fbd9c0e3cfa36a2e69dc0a12b3260b2725e08631b6bb03a&ipo=images" alt=""></div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblog.deervalley.com%2Fwp-content%2Fuploads%2F2010%2F01%2Fcrab.jpg&f=1&nofb=1&ipt=66d434122e1b188d2fbd9c0e3cfa36a2e69dc0a12b3260b2725e08631b6bb03a&ipo=images" alt="seafood Image"></div>
             </div>
         <div id="mother-half" class="the-other-half">
             <div class="description-part">
@@ -27,12 +27,13 @@
                 <p>  You know you want to</p>            
             </div>
             <div>
-                <form action="#" method="get">
+                <!-- Form tag uses in this case GET method bucause sensitive information is not being used -->
+                <form action="example.html" method="get"> 
                     <fieldset>
                         <h2>Let's do this!</h2>
-                        <div><label for="name">Name</label><input type="text" id="name" name="name" pattern="\w{5,20}" required><span></span></div>
-                        <div><label for="email">E mail</label><input type="email" name="email" required><span></span></div>
-                        <div><label for="phone">Telephone</label><input type="tel" id="phone" required pattern="\d{8,16}"><span></span></div>
+                        <div><label for="name">Name</label><input type="text" id="name" name="name" pattern="\w{5,20}" placeholder="your full name" required><span></span></div>
+                        <div><label for="email">E mail</label><input type="email" name="email" required placeholder="idont@care" ><span></span></div>
+                        <div><label for="phone">Telephone</label><input type="tel" id="phone" required pattern="\d{8,16}" placeholder="555-55555"><span></span></div>
                     </fieldset>
                     <fieldset>
                         <div><label for="pass">Password</label><input type="password" id="pass" autocomplete="new-password" required><span></span></div>
@@ -44,7 +45,7 @@
             </div>
             <div id="the-footer-section">
                 <div><button type="button" id="the-only-button">Create Account</button></div>
-                <p>Already have an account? <a href="">Log in</a></p>
+                <p>Already have an account? <a id="already-subscribed" href="">Log in</a></p>
 
 
 

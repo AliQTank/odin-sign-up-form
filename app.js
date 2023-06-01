@@ -16,4 +16,4 @@ function consolation() {
     console.log("clicked");
 }
 
-console.log("LOGGED ON?")
+console.log("LOGGED ON?");
