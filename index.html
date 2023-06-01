@@ -31,12 +31,12 @@
                 <form action="example.html" method="get"> 
                     <fieldset>
                         <h2>Let's do this!</h2>
-                        <div><label for="name">Name</label><input type="text" id="name" name="name" pattern="\w{5,20}" placeholder="your full name" required><span></span></div>
+                        <div><label for="name">Name</label><input type="text" id="name" name="name" pattern="\w{5,20}|\w+\s\w+" placeholder="your full name" required><span></span></div>
                         <div><label for="email">E mail</label><input type="email" name="email" required placeholder="idont@care" ><span></span></div>
-                        <div><label for="phone">Telephone</label><input type="tel" id="phone" required pattern="\d{8,16}" placeholder="555-55555"><span></span></div>
+                        <div><label for="phone">Telephone</label><input type="tel" id="phone" required pattern="(\d{8,16}|\d{3}-\d{5,13})" placeholder="555-55555"><span></span></div>
                     </fieldset>
                     <fieldset>
-                        <div><label for="pass">Password</label><input type="password" id="pass" autocomplete="new-password" required><span></span></div>
+                        <div><label for="pass">Password</label><input type="password" id="pass" autocomplete="new-password" required pattern="(^[A-Z])(\w{8,14})(\d+$|\w$)"><span></span></div>
                         <div><label for="confirm">confirm password</label><input type="password" id="confirm" autocomplete="new-password" required><span></span></div>
                         
                     </fieldset>       

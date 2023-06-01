@@ -156,7 +156,7 @@ input:required + span::after {
 
 #the-footer-section {
     height: 100%;
-    padding: 50px;
+    padding: 30px;
 
 }
 
@@ -176,13 +176,25 @@ input:required + span::after {
     border: 2px solid white;
 }
 
-#already-subscribed {
+/* unvisited link */
+#already-subscribed:link {
     color: white;
     text-decoration: none;
 }
 
+/* visited link */
+#already-subscribed:visited {
+    color: hotpink;
+}
+
+/* mouse over link */
 #already-subscribed:hover {
     color: var(--orangeredobscure);
+}
+
+/* selected link */
+#already-subscribed:active {
+    color: var(--psichogreen);
 }
 
 
