@@ -10,10 +10,18 @@ onlyButton2.addEventListener("click", () => {
     consolation();
 });
 
-
+confirmPass.addEventListener("input", e => {
+    if (confirmPass.value !== passwordInput.value) {
+        confirmPass.setCustomValidity("confirm pass must be equal to password");
+    } else {
+        confirmPass.setCustomValidity("");
+    }
+})
 
 function consolation() {
     console.log("clicked");
 }
+
+
 
 console.log("LOGGED ON?");
